@@ -1,9 +1,9 @@
 # Import the required modules
-import requests, json
+import requests, json, os
 
 
 base_url = "http://apilayer.net/api/live?"
-access_key = "65ff18d838f917b806601a7e808e63b4"
+access_key = os.getenv('currencyAPI')
 
 end_point = f"{base_url}access_key={access_key}"
 
